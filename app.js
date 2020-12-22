@@ -83,9 +83,9 @@ const app = Vue.createApp({
             const healValue = getRandomValue(8,20);
             if (this.playerHealth + healValue > 100) {
                 this.playerHealth = 100}
-                else {this.playerHealth += healValue;}
-            this.addLogmessage('player','heal', healValue);
+                else {this.playerHealth += healValue};
             this.attackPlayer();
+            this.addLogmessage('player','heal', healValue);
             this.counter();
             },
         surrender() {

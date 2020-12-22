@@ -85,7 +85,7 @@ const app = Vue.createApp({
                 this.playerHealth = 100}
                 else {this.playerHealth += healValue;}
             this.addLogmessage('player','heal', healValue);
-            this.attackPlayer;
+            this.attackPlayer();
             this.counter();
             },
         surrender() {
